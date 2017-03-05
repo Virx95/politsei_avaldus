@@ -1,0 +1,12 @@
+label, select {
+	width: 200px;
+}
+
+
+body {
+	margin-left: 20px;
+}
+
+input, select, textarea {
+	margin: 5px;
+}
