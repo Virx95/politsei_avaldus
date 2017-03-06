@@ -13,12 +13,24 @@ textarea {
     margin: 5px;
 }
 
-#vara {
+#vara,
+#isik,
+#tunnistaja,
+.form-group-additional-info {
     width: 450px;
     border: 1px solid black;
     margin: 20px;
+    padding: 5px;
 }
 
-#removeVaraButton {
+#submitInfo {
+    font-weight: bold;
+    font-size: 250%;
+}
+
+#removeVaraButton,
+#removeIsikButton,
+#removeTunnistajaButton,
+#submitButton {
     margin: 5px;
 }
