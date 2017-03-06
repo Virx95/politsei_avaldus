@@ -12,7 +12,7 @@ $(document).ready(function () {
     <input type="number" min="1500" max="2017" step="1" value="2017" id="soetamiseAasta" name="soetamiseAasta" />
     <br>
     <label for="value">Ligikaudne hetkeväärtus</label>
-    <input type="text" id="value" name="value" /> €
+    <input type="number" min="0" max="10000000" step="1" value="0" id="value" name="value" /> €
     <br>
     <label for="varaOlemas">Vara valdus olemas</label>
     <input type="datetime-local" id="varaOlemas" name="varaOlemas" />
