@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 
@@ -29,6 +30,7 @@
             <label for="amet">Amet</label>
             <input type="text" id="amet" />
             <br>
+            <div w3-include-html="countries.html"></div>
             <label for="kodakondsus">Kodakondsus</label>
             <select id="kodakondsus" name="kodakondsus">
                 <option>Eesti Vabariik</option>
@@ -631,10 +633,17 @@
             <label for="varalineKahju">Tekitatud varaline kahju</label>
             <input id="varalineKahju" maxlength="10" name="varalineKahju" type="text"> €
         </div>
+        <div class="form-group-add-buttons">
+            <h2>Ära võetud/viidud/saamata jäänud vara</h2>
+            <div id="addVara"></div>
+            <button id="addVaraButton" type="button">Lisa vara</button>
+            
+            <div id="addIsik"></div>
+            
+            <div id="addTunnistaja"></div>
+        </div>
         <input type="submit" value="Kinnita" />
     </form>
-
-
 </body>
 
 </html>
