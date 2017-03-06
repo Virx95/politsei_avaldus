@@ -9,7 +9,7 @@ $(document).ready(function () {
     <input id="varaLukustatud" name="varaLukustatud" type="checkbox">
     <br>
     <label for="soetamiseAasta">Soetamise aasta</label>
-    <input type="year" id="soetamiseAasta" name="soetamiseAasta" />
+    <input type="number" min="1500" max="2017" step="1" value="2017" id="soetamiseAasta" name="soetamiseAasta" />
     <br>
     <label for="value">Ligikaudne hetkeväärtus</label>
     <input type="text" id="value" name="value" /> €
