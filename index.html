@@ -31,7 +31,6 @@
             <label for="amet">Amet</label>
             <input type="text" id="amet" />
             <br>
-            <div w3-include-html="countries.html"></div>
             <label for="kodakondsus">Kodakondsus</label>
             <select id="kodakondsus" name="kodakondsus">
                 <!-- js/addCountries.js paneb optionid siia -->
@@ -98,9 +97,7 @@
             </select>
             <br>
             <label for="riik">Riik</label>
-            <select id="riik" name="riik">
-                <!-- js/addCountries.js paneb optionid siia -->
-            </select>
+            <select id="riik" name="riik"></select>
             <br>
             <label for="kuriteoAadress">Kuriteo adress</label>
             <input type="text" id="kuriteoAadress" name="kuriteoAadress" />
@@ -108,6 +105,7 @@
             <label for="kuriteoKoht">Kuriteo koht (nt internet, pood, vms)</label>
             <input type="text" id="kuriteoKoht" name="kuriteoKoht" />
         </div>
+
         <div class="form-group-toimunu-kirjeldus">
             <h2>Toimunu kirjeldus:</h2>
             <textarea id="toimunuKirjeldus" rows="3" name="toimunuKirjeldus" placeholder="Kirjelda toimunut siia..."></textarea>
@@ -115,20 +113,37 @@
             <label for="varalineKahju">Tekitatud varaline kahju</label>
             <input id="varalineKahju" maxlength="10" name="varalineKahju" type="text"> €
         </div>
+
         <div class="form-group-add-buttons">
-            
             <h2>Ära võetud/viidud/saamata jäänud vara:</h2>
             <div id="addVara"></div>
             <button id="addVaraButton" type="button">Lisa vara</button>
-            <!-- nupu funktsioon asub /js/app.js failis -->
+
             <h2>Süüteo toime pannud isikute andmed:</h2>
             <div id="addIsik"></div>
-            <button type="button">Lisa isik</button>
-            
+            <button id="addIsikButton" type="button">Lisa isik</button>
+
             <h2>Tunnistajate andmed:</h2>
             <div id="addTunnistaja"></div>
-            <button type="button">Lisa tunnistaja</button>
+            <button id="addTunnistajaButton" type="button">Lisa tunnistaja</button>
         </div>
+
+        <div class="form-group-additional-info">
+            <h2>Täiendavad andmed</h2>
+            <label for="kokkuleppemenetlus">Olen nõus kokkuleppemenetlusega</label>
+            <input type="checkbox" id="kokkuleppemenetlus" name="kokkuleppemenetlus">
+            <br>
+            <label for="dokumendidEmailile">Olen nõus, et menetlusega seotud dokumendid edastatakse minu poolt antud e-posti aadressile</label>
+            <input type="checkbox" id="dokumendidEmailile" name="dokumendidEmailile">
+            <br>
+            <label for="eToimik"> Soovin teavet E-Toimiku kaudu https://www.e-toimik.ee/</label>
+            <input type="checkbox" id="eToimik" name="eToimik">
+            <br>
+        </div>
+        <div id="submitInfo">
+            Kõik esitatud andmed on õiged. Olen teadlik, et valeandmete esitamine on karistatav
+        </div>
+
         <input type="submit" id="submitButton" value="Kinnita" />
     </form>
 </body>
