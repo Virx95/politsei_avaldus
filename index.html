@@ -14,138 +14,213 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="container-center">
+            <div class="content">
+                <form>
+                    <h1>Politsei avaldus</h1>
+                    <hr/>
+                    <div class="form-group-teataja">
+                        <h2>Teataja:</h2>
+                        <div class="form-row">
+                            <div class="input-row left">
+                                <label for="firstname">Eesnimi</label>
+                                <input type="text" id="firstname" />
+                            </div>
+                            <div class="input-row right">
+                                <label for="lastname">Perekonnanimi</label>
+                                <input type="text" id="lastname" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row">
+                                <label for="isikukood">Isikukood</label>
+                                <input type="text" id="isikukood" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row">
+                                <label for="amet">Amet</label>
+                                <input type="text" id="amet" />
+                                <br>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row">
+                                <!-- <div w3-include-html="countries.html"></div> -->
+                                <label for="kodakondsus">Kodakondsus</label>
+                                <select id="kodakondsus" name="kodakondsus">
+                                    <!-- js/addCountries.js paneb optionid siia -->
+                                </select>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row left">
+                                <label for="koduAadress">Kodu aadress</label>
+                                <input type="text" id="koduAadress" />
+                                <br>
+                            </div>
+                            <div class="input-row right">
+                                <label for="sihtnumber">Sihtnumber</label>
+                                <input type="text" id="sihtnumber" />
+                                <br>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row">
+                                <label for="maakond">Maakond</label>
+                                <select id="maakond" name="maakond">
+                                    <option>Harju maakond</option>
+                                    <option>Hiiu maakond</option>
+                                    <option>Ida-Viru maakond</option>
+                                    <option>Jõgeva maakond</option>
+                                    <option>Järva maakond</option>
+                                    <option>Lääne maakond</option>
+                                    <option>Lääne-Viru maakond</option>
+                                    <option>Põlva maakond</option>
+                                    <option>Pärnu maakond</option>
+                                    <option>Rapla maakond</option>
+                                    <option>Saare maakond</option>
+                                    <option>Tartu maakond</option>
+                                    <option>Valga maakond</option>
+                                    <option>Viljandi maakond</option>
+                                    <option>Võru maakond</option>
+                                </select>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row left">
+                                <label for="kontakteerumine"><span>Sobiv viis kontakteerumiseks</span></label>
+                                <select id="kontakteerumine" name="kontakteerumine">
+                                    <option value="e-kirja teel">e-kirja teel</option>
+                                    <option value="telefoni teel">telefoni teel</option>
+                                </select>
+                                <br>
+                            </div>
+                            <div class="input-row right">
+                                <label for="contactTime">Sobiv aeg kontakteerumiseks</label>
+                                <input type="text" id="contactTime" />
+                                <br>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row left">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" />
+                                <br>
+                            </div>
+                            <div class="input-row right">
+                                <label for="telefon">Telefon</label>
+                                <input type="text" id="telefon" />
+                                <br>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row">
+                                <label for="onJuriidilineIsik">Kannatanu on juriidiline isik</label>
+                                <input id="onJuriidilineIsik" name="onJuriidilineIsik" type="checkbox" />
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr/>
+                    <div class="form-group-kuriteo-aeg">
+                        <h2>Sündmuse toimumise aeg:</h2>
+                        <div class="form-row">
+                            <input type="datetime-local" id="eventDate" name="eventDate" />
+                        </div>
+                    </div>
+                    <br>
+                    <hr/>
+                    <div class="form-group-kuriteo-koht">
+                        <h2>Sündmuse toimumise koht:</h2>
+                        <div class="form-row">
+                            <div class="input-row">
+                                <label for="prefektuur">Prefektuur</label>
+                                <select id="prefektuur" name="prefektuur">
+                                    <option value="Üldine kontakt">Üldine kontakt</option>
+                                    <option value="P&otilde;hja Prefektuur">P&otilde;hja Prefektuur</option>
+                                    <option value="L&otilde;una Prefektuur">L&otilde;una Prefektuur</option>
+                                    <option value="Ida Prefektuur">Ida Prefektuur</option>
+                                    <option value="L&auml;&auml;ne Prefektuur">L&auml;&auml;ne Prefektuur</option>
+                                </select>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row">
+                                <label for="riik">Riik</label>
+                                <select id="riik" name="riik">
+                                    <!-- js/addCountries.js paneb optionid siia -->
+                                </select>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row left">
+                                <label for="kuriteoAadress">Kuriteo adress</label>
+                                <input type="text" id="kuriteoAadress" name="kuriteoAadress" />
+                                <br>
+                            </div>
+                            <div class="input-row right">
+                                <label for="kuriteoKoht">Kuriteo koht (nt internet, pood, vms)</label>
+                                <input type="text" id="kuriteoKoht" name="kuriteoKoht" />
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="form-group-toimunu-kirjeldus">
+                        <h2>Toimunu kirjeldus:</h2>
+                        <div class="form-row">
+                            <textarea id="toimunuKirjeldus" rows="3" name="toimunuKirjeldus" placeholder="Kirjelda toimunut siia..."></textarea>
+                            <br>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-row">
+                                <label for="varalineKahju">Tekitatud varaline kahju</label>
+                                <input id="varalineKahju" maxlength="10" name="varalineKahju" type="text"> €
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-add-buttons">
+                        <hr/>
+                        <h2>Ära võetud/viidud/saamata jäänud vara:</h2>
+                        <div id="addVara"></div>
+                        <button id="addVaraButton" type="button">Lisa vara</button>
+                        <hr/>
+                        <h2>Süüteo toime pannud isikute andmed:</h2>
+                        <div id="addIsik"></div>
+                        <button id="addIsikButton" type="button">Lisa isik</button>
 
-    <form>
-        <h1>Politsei avaldus</h1>
-        <div class="form-group-teataja">
-            <h2>Teataja:</h2>
-            <label for="firstname">Eesnimi</label>
-            <input type="text" id="firstname" />
-            <br>
-            <label for="lastname">Perekonnanimi</label>
-            <input type="text" id="lastname" />
-            <br>
-            <label for="isikukood">Isikukood</label>
-            <input type="text" id="isikukood" />
-            <br>
-            <label for="amet">Amet</label>
-            <input type="text" id="amet" />
-            <br>
-            <label for="kodakondsus">Kodakondsus</label>
-            <select id="kodakondsus" name="kodakondsus">
-                <!-- js/addCountries.js paneb optionid siia -->
-            </select>
-            <br>
-            <label for="koduAadress">Kodu aadress</label>
-            <input type="text" id="koduAadress" />
-            <br>
-            <label for="sihtnumber">Sihtnumber</label>
-            <input type="text" id="sihtnumber" />
-            <br>
-            <label for="maakond">Maakond</label>
-            <select id="maakond" name="maakond">
-                <option>Harju maakond</option>
-                <option>Hiiu maakond</option>
-                <option>Ida-Viru maakond</option>
-                <option>Jõgeva maakond</option>
-                <option>Järva maakond</option>
-                <option>Lääne maakond</option>
-                <option>Lääne-Viru maakond</option>
-                <option>Põlva maakond</option>
-                <option>Pärnu maakond</option>
-                <option>Rapla maakond</option>
-                <option>Saare maakond</option>
-                <option>Tartu maakond</option>
-                <option>Valga maakond</option>
-                <option>Viljandi maakond</option>
-                <option>Võru maakond</option>
-            </select>
-            <br>
-            <label for="kontakteerumine">Sobiv viis kontakteerumiseks</label>
-            <select id="kontakteerumine" name="kontakteerumine">
-                <option value="e-kirja teel">e-kirja teel</option>
-                <option value="telefoni teel">telefoni teel</option>
-            </select>
-            <br>
-            <label for="contactTime">Sobiv aeg kontakteerumiseks</label>
-            <input type="text" id="contactTime" />
-            <br>
-            <label for="email">Email</label>
-            <input type="email" id="email" />
-            <br>
-            <label for="telefon">Telefon</label>
-            <input type="text" id="telefon" />
-            <br>
-            <label for="onJuriidilineIsik">Kannatanu on juriidiline isik</label>
-            <input id="onJuriidilineIsik" name="onJuriidilineIsik" type="checkbox" />
+                        <hr/>
+                        <h2>Tunnistajate andmed:</h2>
+                        <div id="addTunnistaja"></div>
+                        <button id="addTunnistajaButton" type="button">Lisa tunnistaja</button>
+                    </div>
+                    <hr/>
+                    <div class="form-group-additional-info">
+                        <h2>Täiendavad andmed</h2>
+                        <label for="kokkuleppemenetlus">Olen nõus kokkuleppemenetlusega</label>
+                        <input type="checkbox" id="kokkuleppemenetlus" name="kokkuleppemenetlus">
+                        <br>
+                        <label for="dokumendidEmailile">Olen nõus, et menetlusega seotud dokumendid edastatakse minu poolt antud e-posti aadressile</label>
+                        <input type="checkbox" id="dokumendidEmailile" name="dokumendidEmailile">
+                        <br>
+                        <label for="eToimik"> Soovin teavet E-Toimiku kaudu https://www.e-toimik.ee/</label>
+                        <input type="checkbox" id="eToimik" name="eToimik">
+                        <br>
+                    </div>
+                    <hr/>
+                    <div id="submitInfo">
+                        Kõik esitatud andmed on õiged. Olen teadlik, et valeandmete esitamine on karistatav
+                    </div>
+                    <input type="submit" id="submitButton" value="Kinnita" />
+                </form>
+            </div>
         </div>
-        <br>
-        <div class="form-group-kuriteo-aeg">
-            <h2>Sündmuse toimumise aeg:</h2>
-            <input type="datetime-local" id="eventDate" name="eventDate" />
-        </div>
-        <br>
-        <div class="form-group-kuriteo-koht">
-            <h2>Sündmuse toimumise koht:</h2>
-            <label for="prefektuur">Prefektuur</label>
-            <select id="prefektuur" name="prefektuur">
-                <option value="Üldine kontakt">Üldine kontakt</option>
-                <option value="P&otilde;hja Prefektuur">P&otilde;hja Prefektuur</option>
-                <option value="L&otilde;una Prefektuur">L&otilde;una Prefektuur</option>
-                <option value="Ida Prefektuur">Ida Prefektuur</option>
-                <option value="L&auml;&auml;ne Prefektuur">L&auml;&auml;ne Prefektuur</option>
-            </select>
-            <br>
-            <label for="riik">Riik</label>
-            <select id="riik" name="riik"></select>
-            <br>
-            <label for="kuriteoAadress">Kuriteo adress</label>
-            <input type="text" id="kuriteoAadress" name="kuriteoAadress" />
-            <br>
-            <label for="kuriteoKoht">Kuriteo koht (nt internet, pood, vms)</label>
-            <input type="text" id="kuriteoKoht" name="kuriteoKoht" />
-        </div>
-
-        <div class="form-group-toimunu-kirjeldus">
-            <h2>Toimunu kirjeldus:</h2>
-            <textarea id="toimunuKirjeldus" rows="3" name="toimunuKirjeldus" placeholder="Kirjelda toimunut siia..."></textarea>
-            <br>
-            <label for="varalineKahju">Tekitatud varaline kahju</label>
-            <input id="varalineKahju" maxlength="10" name="varalineKahju" type="text"> €
-        </div>
-
-        <div class="form-group-add-buttons">
-            <h2>Ära võetud/viidud/saamata jäänud vara:</h2>
-            <div id="addVara"></div>
-            <button id="addVaraButton" type="button">Lisa vara</button>
-
-            <h2>Süüteo toime pannud isikute andmed:</h2>
-            <div id="addIsik"></div>
-            <button id="addIsikButton" type="button">Lisa isik</button>
-
-            <h2>Tunnistajate andmed:</h2>
-            <div id="addTunnistaja"></div>
-            <button id="addTunnistajaButton" type="button">Lisa tunnistaja</button>
-        </div>
-
-        <div class="form-group-additional-info">
-            <h2>Täiendavad andmed</h2>
-            <label for="kokkuleppemenetlus">Olen nõus kokkuleppemenetlusega</label>
-            <input type="checkbox" id="kokkuleppemenetlus" name="kokkuleppemenetlus">
-            <br>
-            <label for="dokumendidEmailile">Olen nõus, et menetlusega seotud dokumendid edastatakse minu poolt antud e-posti aadressile</label>
-            <input type="checkbox" id="dokumendidEmailile" name="dokumendidEmailile">
-            <br>
-            <label for="eToimik"> Soovin teavet E-Toimiku kaudu https://www.e-toimik.ee/</label>
-            <input type="checkbox" id="eToimik" name="eToimik">
-            <br>
-        </div>
-        <div id="submitInfo">
-            Kõik esitatud andmed on õiged. Olen teadlik, et valeandmete esitamine on karistatav
-        </div>
-
-        <input type="submit" id="submitButton" value="Kinnita" />
-    </form>
+    </div>
 </body>
 
 </html>
