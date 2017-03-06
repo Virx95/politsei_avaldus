@@ -9,16 +9,16 @@ $(document).ready(function () {
     <input id="varaLukustatud" name="varaLukustatud" type="checkbox">
     <br>
     <label for="soetamiseAasta">Soetamise aasta</label>
-    <input type="text" id="soetamiseAasta" name="soetamiseAasta" />
+    <input type="year" id="soetamiseAasta" name="soetamiseAasta" />
     <br>
     <label for="value">Ligikaudne hetkeväärtus</label>
     <input type="text" id="value" name="value" /> €
     <br>
     <label for="varaOlemas">Vara valdus olemas</label>
-    <input placeholder="täpne aeg" type="text" id="varaOlemas" name="varaOlemas" />
+    <input type="datetime-local" id="varaOlemas" name="varaOlemas" />
     <br>
     <label for="varaOlemas">Vara valdus olemas</label>
-    <input type="text" placeholder="täpne aeg" id="varaOlemas" name="varaOlemas" />
+    <input type="datetime-local" id="varaOlemas" name="varaOlemas" />
     <br>
     <label for="eritunnused">Tundemärgid ja eritunnused</label>
     <textarea id="eritunnused" rows="3" name="eritunnused" placeholder="Kirjuta siia..."></textarea>
