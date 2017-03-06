@@ -1,36 +1,45 @@
-label,
-select {
-    width: 200px;
+hr {
+    height: 2px;
+    background-color: #afc2cc;
+    border: none;
+    margin-bottom: 20px;
 }
 
-body {
-    margin-left: 20px;
+.container {
+    display: table;
+    width: 100%;
+}
+
+.container-center {
+    padding: 10px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-row div {
+    display: inline-block;
+    margin-bottom: 15px;
+    vertical-align: left;
+}
+
+.input-row {
+    padding-right: 15px;
+}
+
+label {
+    display: block;
 }
 
 input,
-select,
-textarea {
-    margin: 5px;
-}
-
-#vara,
-#isik,
-#tunnistaja,
-.form-group-additional-info {
-    width: 450px;
-    border: 1px solid black;
-    margin: 20px;
-    padding: 5px;
-}
-
-#submitInfo {
-    font-weight: bold;
-    font-size: 250%;
-}
-
-#removeVaraButton,
-#removeIsikButton,
-#removeTunnistajaButton,
-#submitButton {
-    margin: 5px;
+select {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
