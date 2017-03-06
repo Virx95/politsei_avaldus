@@ -30,6 +30,4 @@ $(document).ready(function () {
     $('body').on('click', '#removeVaraButton', function () {
         $(this).closest('div').remove();
     });
-    
-    document.getElementById("eventDate").defaultValue = new Date($.now());
 });
