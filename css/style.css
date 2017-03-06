@@ -1,12 +1,24 @@
-label, select {
-	width: 200px;
+label,
+select {
+    width: 200px;
 }
-
 
 body {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 
-input, select, textarea {
-	margin: 5px;
+input,
+select,
+textarea {
+    margin: 5px;
+}
+
+#vara {
+    width: 450px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#removeVaraButton {
+    margin: 5px;
 }
