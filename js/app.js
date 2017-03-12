@@ -22,6 +22,7 @@ $(document).ready(function () {
     <br>
     <label for="eritunnused">Tundemärgid ja eritunnused</label>
     <textarea id="eritunnused" rows="3" name="eritunnused" placeholder="Kirjuta siia..."></textarea>
+	<p>
     <button id="removeVaraButton" type="button">Eemalda vara</button>
 </div>
 `);
@@ -316,6 +317,7 @@ $(document).ready(function () {
             <input type="text" id="isikTelefon" />
             <label for="isikTundemargid">Tundemärgid (sh sugu, vanus, kirjeldus, riietus jne)</label>
             <textarea id="isikTundemargid" rows="3" name="isikTundemargid" placeholder="Kirjuta siia..."></textarea>
+			<p>
             <button id="removeIsikButton" type="button">Eemalda isik</button>
             
 </div>
@@ -612,6 +614,7 @@ $(document).ready(function () {
             <input type="text" id="tunnistajaTelefon" />
             <label for="tunnistajaTundemargid">Tundemärgid (sh sugu, vanus, kirjeldus, riietus jne)</label>
             <textarea id="tunnistajaTundemargid" rows="3" name="tunnistajaTundemargid" placeholder="Kirjuta siia..."></textarea>
+			<p>
             <button id="removeTunnistajaButton" type="button">Eemalda tunnistaja</button>
         </div>
 `);
