@@ -22,20 +22,21 @@
                     <hr/>
                     <div class="form-group-teataja">
                         <h2>Teataja:</h2>
+						<p>* - märgitud väljad on kohustuslikud</p>
                         <div class="form-row">
                             <div class="input-row left">
-                                <label for="firstname">Eesnimi</label>
-                                <input type="text" id="firstname" />
+                                <label for="firstname">Eesnimi*</label>
+                                <input type="text" id="firstname" required oninvalid="this.setCustomValidity('See väli peab olema täidetud!')" oninput="setCustomValidity('')" />
                             </div>
                             <div class="input-row right">
-                                <label for="lastname">Perekonnanimi</label>
-                                <input type="text" id="lastname" />
+                                <label for="lastname">Perekonnanimi*</label>
+                                <input type="text" id="lastname" required oninvalid="this.setCustomValidity('See väli peab olema täidetud!')" oninput="setCustomValidity('')" />
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="input-row">
-                                <label for="isikukood">Isikukood</label>
-                                <input type="text" id="isikukood" />
+                                <label for="isikukood">Isikukood*</label>
+                                <input type="text" id="isikukood" required pattern="\d+" oninvalid="this.setCustomValidity('Sisestage korrektne isikukood!')" onchange="setCustomValidity('')" />
                             </div>
                         </div>
                         <div class="form-row">
@@ -107,13 +108,13 @@
                         </div>
                         <div class="form-row">
                             <div class="input-row left">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" />
+                                <label for="email">E-post*</label>
+                                <input type="email" id="email" required pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-‌​9-]+)*" oninvalid="this.setCustomValidity('Sisestage korrektne e-posti aadress!')" onchange="setCustomValidity('')"/>
                                 <br>
                             </div>
                             <div class="input-row right">
-                                <label for="telefon">Telefon</label>
-                                <input type="text" id="telefon" />
+                                <label for="telefon">Telefon*</label>
+                                <input type="text" id="telefon" required pattern="\d+" oninvalid="this.setCustomValidity('Sisestage korrektne telefoninumber!')" oninput="setCustomValidity('')"/>
                                 <br>
                             </div>
                         </div>
@@ -172,9 +173,10 @@
                     </div>
                     <hr/>
                     <div class="form-group-toimunu-kirjeldus">
-                        <h2>Toimunu kirjeldus:</h2>
+                        <h2>Toimunu kirjeldus*</h2>
                         <div class="form-row">
-                            <textarea id="toimunuKirjeldus" rows="3" name="toimunuKirjeldus" placeholder="Kirjelda toimunut siia..."></textarea>
+                            <textarea id="toimunuKirjeldus" rows="3" name="toimunuKirjeldus" placeholder="Kirjelda toimunut siia..."
+								required oninvalid="this.setCustomValidity('See väli peab olema täidetud!')" oninput="setCustomValidity('')"></textarea>
                             <br>
                         </div>
                         <div class="form-row">
