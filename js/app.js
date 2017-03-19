@@ -728,3 +728,70 @@ $(document).ready(function () {
         $(this).closest('.tunnistaja').remove();
     });
 });
+
+function validateForm() {
+	var status = true;
+	var firstEmpty;
+	var fn=document.getElementById('firstname');
+	var ln=document.getElementById('lastname');
+	var ik=document.getElementById('isikukood');
+	var email=document.getElementById('email');
+	var phone=document.getElementById('telefon');
+	var description=document.getElementById('toimunuKirjeldus');
+	
+	if(description.value == "") {
+		document.getElementById('toimunuKirjeldus').style.borderColor = "red";
+		firstEmpty = description;
+		status = false;
+	} else {
+		document.getElementById('toimunuKirjeldus').style.borderColor = "#ccc";
+	}
+	
+	if(phone.value == "") {
+		document.getElementById('telefon').style.borderColor = "red";
+		firstEmpty = phone;
+		status = false;
+	} else {
+		document.getElementById('telefon').style.borderColor = "#ccc";
+	}
+	
+	if(email.value == "") {
+		document.getElementById('email').style.borderColor = "red";
+		firstEmpty = email;
+		status = false;
+	} else {
+		document.getElementById('email').style.borderColor = "#ccc";
+	}
+	
+	if(ik.value == "") {
+		document.getElementById('isikukood').style.borderColor = "red";
+		firstEmpty = ik;
+		status = false;
+	} else {
+		document.getElementById('isikukood').style.borderColor = "#ccc";
+	}
+	
+	if(ln.value == "") {
+		document.getElementById('lastname').style.borderColor = "red";
+		firstEmpty = ln;
+		status = false;
+	} else {
+		document.getElementById('lastname').style.borderColor = "#ccc";
+	}
+	
+	if(fn.value == "") {
+		document.getElementById('firstname').style.borderColor = "red";
+		firstEmpty = fn;
+		status = false;
+	} else {
+		document.getElementById('firstname').style.borderColor = "#ccc";
+	}
+	
+    if(status == false){
+		//alert("* - ga tähistatud väljad on kohustuslikud!");
+		firstEmpty.focus();
+        return false;
+    } else {
+		return true;
+	}
+};
