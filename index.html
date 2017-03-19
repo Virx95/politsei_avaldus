@@ -20,7 +20,7 @@
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-sm-6 col-sm-offset-3 i-no-padding i-no-margin-tb--xs">
-            <form>
+            <form onsubmit="return validateForm();">
                 <h1>Politsei avaldus</h1>
                 <hr/>
                 <div>
@@ -39,7 +39,7 @@
                     <div class="row">
                         <div class="form-group col-sm-6">
                             <label for="isikukood">Isikukood*</label>
-                            <input class="form-control" type="text" id="isikukood" required pattern="\d+"
+                            <input class="form-control" type="text" id="isikukood" pattern="\d+"
                                    oninvalid="this.setCustomValidity('Sisestage korrektne isikukood!')"
                                    onchange="setCustomValidity('')"/>
                         </div>
@@ -103,14 +103,14 @@
                     <div class="row">
                         <div class="form-group col-sm-6">
                             <label for="email">E-post*</label>
-                            <input class="form-control" type="email" id="email" required
+                            <input class="form-control" type="email" id="email"
                                    pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-‌​9-]+)*"
                                    oninvalid="this.setCustomValidity('Sisestage korrektne e-posti aadress!')"
                                    onchange="setCustomValidity('')"/>
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="telefon">Telefon*</label>
-                            <input class="form-control" type="text" id="telefon" required pattern="\d+"
+                            <input class="form-control" type="text" id="telefon" pattern="\d+"
                                    oninvalid="this.setCustomValidity('Sisestage korrektne telefoninumber!')"
                                    oninput="setCustomValidity('')"/>
                         </div>
@@ -182,9 +182,7 @@
                     <div class="row">
                         <div class="form-group col-sm-12">
                             <textarea class="form-control col-sm-12" id="toimunuKirjeldus" rows="3" name="toimunuKirjeldus"
-                                      placeholder="Kirjelda toimunut siia..."
-                                      required oninvalid="this.setCustomValidity('See väli peab olema täidetud!')"
-                                      oninput="setCustomValidity('')"></textarea>
+                                      placeholder="Kirjelda toimunut siia..."></textarea>
                         </div>
                     </div>
                     <div class="row">
