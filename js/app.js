@@ -1,29 +1,57 @@
 $(document).ready(function () {
     $("#addVaraButton").click(function () {
+        console.log("YOLO")
         $("#addVara").append(`
 <div id="vara">
-    <label for="esemeNimetus">Eseme nimetus</label>
-    <input type="text" id="esemeNimetus" name="esemeNimetus" />
-    <br>
-    <label for="varaLukustatud">Vara oli lukustatud ruumis</label>
-    <input id="varaLukustatud" name="varaLukustatud" type="checkbox">
-    <br>
-    <label for="soetamiseAasta">Soetamise aasta</label>
-    <input type="number" min="1500" max="2017" step="1" value="2017" id="soetamiseAasta" name="soetamiseAasta" />
-    <br>
-    <label for="value">Ligikaudne hetkeväärtus</label>
-    <input type="number" min="0" max="10000000" step="1" value="0" id="value" name="value" /> €
-    <br>
-    <label for="varaOlemas">Vara valdus olemas</label>
-    <input type="datetime-local" id="varaOlemas" name="varaOlemas" />
-    <br>
-    <label for="varaOlemas">Vara valdus olemas</label>
-    <input type="datetime-local" id="varaOlemas" name="varaOlemas" />
-    <br>
-    <label for="eritunnused">Tundemärgid ja eritunnused</label>
-    <textarea id="eritunnused" rows="3" name="eritunnused" placeholder="Kirjuta siia..."></textarea>
-	<p>
-    <button id="removeVaraButton" type="button">Eemalda vara</button>
+    <div class="row">
+        <div class="form-group col-sm-12">
+            <label for="esemeNimetus">Eseme nimetus</label>
+            <input class="form-control" type="text" id="esemeNimetus" name="esemeNimetus" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="checkbox col-sm-12">
+            <label>
+                <input type="checkbox">Vara oli lukustatud ruumis
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-sm-6">
+            <label for="soetamiseAasta">Soetamise aasta</label>
+            <input class="form-control" type="number" min="1500" max="2017" step="1" value="2017" id="soetamiseAasta" name="soetamiseAasta" />
+        </div>
+        <div class="form-group col-sm-6">
+            <label for="value">Ligikaudne hetkeväärtus</label>
+            <div class="input-group">
+                <input class="form-control" type="number" min="0" max="10000000" step="1" value="0" id="value" name="value" />
+                <div class="input-group-addon">€</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-sm-12">
+            <label for="varaOlemas">Vara valdus olemas (viimati kannatanul/teatajal ese/asi olemas)</label>
+            <input class="form-control" type="datetime-local" id="varaOlemas" name="varaOlemas" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-sm-12">
+            <label for="varaOlemas">Vara valdusest väljaminek on tuvastatud (polnud enam eset/asja teatajal/kannatanul olemas)</label>
+            <input class="form-control" type="datetime-local" id="varaOlemas" name="varaOlemas" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-sm-12">
+            <label for="eritunnused">Tundemärgid ja eritunnused</label>
+            <textarea class="form-control" id="eritunnused" rows="3" name="eritunnused" placeholder="Kirjuta siia..."></textarea>
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="form-group col-sm-3">
+            <button class="btn btn-danger" id="removeVaraButton" type="button">Eemalda vara</button>
+        </div>
+	</div>
 </div>
 `);
     });

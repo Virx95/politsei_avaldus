@@ -5,41 +5,14 @@ hr {
     margin-bottom: 20px;
 }
 
-.container {
-    display: table;
-    width: 100%;
+.checkbox > label {
+    font-weight: bold;
 }
 
-.container-center {
-    padding: 10px;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.content {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.form-row div {
-    display: inline-block;
-    margin-bottom: 15px;
-    vertical-align: left;
-}
-
-.input-row {
-    padding-right: 15px;
-}
-
-label {
-    display: block;
-}
-
-input,
-select {
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+/*input,*/
+/*select {*/
+    /*!*width: 100%;*!*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/
